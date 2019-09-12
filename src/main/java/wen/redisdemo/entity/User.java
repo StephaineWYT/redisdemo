@@ -44,4 +44,8 @@ public class User implements Serializable {
         this.password = password;
     }
 
+    public String toString() {
+        return "username: " + this.getUsername() + "\n" +
+                "password: " + this.getPassword();
+    }
 }
