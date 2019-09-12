@@ -162,7 +162,7 @@ public class RedisDemoApplicationTests {
     }
 
     /**
-     * 测试 Zset
+     * 测试 ZSet
      */
     @Test
     public void testZSet() {

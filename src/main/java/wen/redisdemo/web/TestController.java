@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-public class HelloController {
+public class TestController {
 
-    protected static Logger logger = LoggerFactory.getLogger(HelloController.class);
+    protected static Logger logger = LoggerFactory.getLogger(TestController.class);
 
     @RequestMapping("/")
     public String test() {

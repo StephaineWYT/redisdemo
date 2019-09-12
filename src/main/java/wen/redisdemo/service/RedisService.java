@@ -6,7 +6,6 @@ import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.stereotype.Service;
 
 import java.io.Serializable;
-import java.util.Set;
 
 @Service
 public class RedisService {
@@ -28,10 +27,4 @@ public class RedisService {
         return valueOperations.get(key);
     }
 
-    public void removePattern(final String cache) {
-        Set<Serializable> keys = redisTemplate.keys(cache);
-        if (keys.size() > 0) {
-            redisTemplate.delete(keys);
-        }
-    }
 }
