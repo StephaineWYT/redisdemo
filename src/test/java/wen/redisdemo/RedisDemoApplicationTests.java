@@ -190,4 +190,5 @@ public class RedisDemoApplicationTests {
         redisService.set("Stephanie", "Went");
         Assert.assertEquals("Went", redisService.get("Stephanie"));
     }
+
 }
